@@ -93,39 +93,5 @@ export default function Navbar() {
         </button>
       </ul>
     </nav>
-    // <nav className='flex flex-col h-12 justify-between bg-slate-300 items-center shadow-md px-4'>
-    //   <Link href='/'>
-    //     <h1
-    //       className={`${logoFont.className} text-2xl md:text-3xl  text-red-700`}
-    //     >
-    //       Sugardipity
-    //     </h1>
-    //   </Link>
-    //   <div
-    //     className={`${linksFont.className} text-md sm:flex sm:items-center justify-center gap-2 md:gap-6`}
-    //   >
-    //     <Link href='/' className='font-bold hover:text-cyan-700  '>
-    //       Cookies
-    //     </Link>
-    //     <Link href='/' className='font-bold hover:text-cyan-700  '>
-    //       Workshops
-    //     </Link>
-    //     <Link href='/' className='font-bold hover:text-cyan-700  '>
-    //       Baking Supplies
-    //     </Link>
-    //     <Link href='/' className='font-bold hover:text-cyan-700  '>
-    //       Contact
-    //     </Link>
-    //   </div>
-    //   <div className='flex items-center  '>
-    //     <HiOutlineUserCircle className='text-2xl mr-1 hidden sm:block' />
-    //     <div className='font-bold hidden md:block'>
-    //       <Link href='/'>Sign In</Link>
-    //     </div>
-    //     <div className='flex gap-2 text-2xl sm:hidden ml-2'>
-    //       <HiBars3 />
-    //     </div>
-    //   </div>
-    // </nav>
   );
 }
