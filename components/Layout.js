@@ -15,13 +15,11 @@ export default function Layout({ children, title }) {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div className='flex min-h-screen flex-col justify-between '>
+      <div className='flex min-h-screen flex-col justify-between object-cover '>
         <header>
           <Navbar />
         </header>
-        <main className={`${inter.className} container m-auto mt-4 px-4`}>
-          {children}
-        </main>
+        <main className={`${inter.className}`}>{children}</main>
         <footer>
           <Footer />
         </footer>
