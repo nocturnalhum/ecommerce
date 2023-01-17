@@ -27,7 +27,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const handleMenu = (prev) => setMenuOpen(!prev);
   return (
-    <nav className='p-2 bg-white shadow md:flex md:items-center md:justify-between'>
+    <nav className='py-3 px-3 bg-white shadow md:flex md:items-center md:justify-between'>
       <div className='flex justify-between items-center'>
         <span className='text'>
           <Link href='/'>
@@ -48,7 +48,7 @@ export default function Navbar() {
         </span>
       </div>
       <ul
-        className={`md:flex md:items-center gap-2 md:gap-3 lg:gap-10 z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 pl-7 md:pl-0 transition-all ease-in-out duration-1000 ${
+        className={`md:flex md:items-center gap-2 md:gap-3 lg:gap-8 z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 pl-7 md:pl-0 transition-all ease-in-out duration-1000 ${
           menuOpen ? 'top-12' : 'top-[-400px] inline-block  '
         }
       `}
@@ -56,7 +56,7 @@ export default function Navbar() {
         <li className='font-bold hover:text-cyan-700  my-4 md:my-0 md:mx-2'>
           <Link href='/'>
             <span className='flex gap-2'>
-              <FaCookie className='text-2xl hidden lg:block' />
+              <FaCookie className='text-2xl md:max-lg:hidden lg:block' />
               Cookies
             </span>
           </Link>
@@ -64,7 +64,7 @@ export default function Navbar() {
         <li className='font-bold hover:text-cyan-70 my-6 md:my-0 md:mx-2'>
           <Link href='/'>
             <span className='flex gap-2'>
-              <GrWorkshop className='text-2xl hidden lg:block' />
+              <GrWorkshop className='text-2xl md:max-lg:hidden lg:block' />
               Workshops
             </span>
           </Link>
@@ -73,7 +73,7 @@ export default function Navbar() {
           <Link href='/'>
             {' '}
             <span className='flex gap-2'>
-              <GiCookingGlove className='text-2xl hidden lg:block' />
+              <GiCookingGlove className='text-2xl md:max-lg:hidden lg:block' />
               Baking Supplies
             </span>
           </Link>
@@ -82,7 +82,7 @@ export default function Navbar() {
           <Link href='/'>
             {' '}
             <span className='flex gap-2'>
-              <MdOutlineMail className='text-2xl hidden lg:block' />
+              <MdOutlineMail className='text-2xl md:max-lg:hidden lg:block' />
               Contact
             </span>
           </Link>
