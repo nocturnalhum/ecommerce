@@ -9,9 +9,9 @@ module.exports = {
       boxShadow: {
         form: '10px 10px 10px rgba(209, 217, 230, 1.0), -10px -10px 10px rgba(255,255,255, 1.0)',
         input:
-          'inset 2px 2px 4px rgba(209, 217, 230, 1.0), inset -2px -2px 4px rgba(255,255,255, 0.5);',
+          '2px 2px 4px rgba(209, 217, 230, 1.0),  -2px -2px 4px rgba(255,255,255, 0.5);',
         focus:
-          'inset 4px 4px 4px rgba(209, 217, 230, 1.0), inset -4px -4px 16px rgba(255,255,255, 1.0);',
+          '4px 4px 4px rgba(209, 217, 230, 1.0), -4px -4px 16px rgba(255,255,255, 1.0);',
       },
     },
   },
