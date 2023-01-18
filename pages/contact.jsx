@@ -22,13 +22,13 @@ export default function Contact() {
                 type='text'
                 name='name'
                 placeholder='Name'
-                className='w-full h-10 pl-6 my-4 rounded-lg bg-[#ecf0f3] shadow-finput focus:shadow-ffocus'
+                className='w-full h-10 pl-6 my-4 rounded-lg bg-[#ecf0f3] shadow-input'
               />
               <input
                 type='email'
                 name='email'
                 placeholder='Email'
-                className='w-full h-10 pl-6 my-4 rounded-lg bg-[#ecf0f3] shadow-inner'
+                className='w-full h-10 pl-6 my-4 rounded-lg bg-[#ecf0f3] shadow-form'
               />
               <input
                 type='text'
