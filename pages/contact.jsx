@@ -11,14 +11,16 @@ export default function Contact() {
   return (
     <>
       <Layout title='Contact'>
-        <div className='flex justify-center bg-[#ecf0f3] h-[950px] relative'>
-          <div className='container rounded-xl p-10 pb-20 bg-[#ecf0f3] shadow-form top-20 absolute z-[1]'>
-            <h1 className='text-3xl font-bold'>Contact</h1>
+        <div className='w-full flex justify-center bg-[#ecf0f3] h-full relative top-16 '>
+          <div className='max-w-2xl rounded-xl p-10 pb-20 bg-[#ecf0f3] shadow-form top-20'>
+            <h1 className='text-3xl font-bold flex justify-center mb-4'>
+              @Contact
+            </h1>
             <form
               action=''
               className='flex flex-col justify-center items-center w-full h-full'
             >
-              <div className='w-full h-10 pl-6 my-4 rounded-lg bg-[#ecf0f3] shadow-input focus:shadow-focus'>
+              <div className='w-full h-10 pl-6 my-4 rounded-lg bg-[#ecf0f3] shadow-input focus-within:shadow-focus'>
                 <input
                   type='text'
                   name='name'
@@ -26,12 +28,12 @@ export default function Contact() {
                   className='bg-[#ecf0f3]  border-none outline-none mt-2 bg-opacity-0'
                 />
               </div>
-              <div>
+              <div className='w-full h-10 pl-6 my-4 rounded-lg bg-[#ecf0f3] shadow-input focus-within:shadow-focus'>
                 <input
                   type='email'
                   name='email'
                   placeholder='Email'
-                  className='w-full h-10 pl-6 my-4 rounded-lg bg-[#ecf0f3] shadow-input focus:shadow-focus'
+                  className='bg-[#ecf0f3]  border-none outline-none mt-2 bg-opacity-0'
                 />
               </div>
               <div className='w-full h-10 pl-6 my-4 rounded-lg bg-[#ecf0f3] shadow-input focus-within:shadow-focus'>
@@ -42,12 +44,14 @@ export default function Contact() {
                   className='bg-[#ecf0f3]  border-none outline-none mt-2 bg-opacity-0'
                 />
               </div>
-              <input
-                type='text'
-                name='message'
-                placeholder='Message'
-                className='w-full h-40 pl-6 my-4 border-none outline-none rounded-lg bg-[#ecf0f3] shadow-input focus:shadow-focus'
-              />
+              <div className='w-full h-48  pl-6 my-4 rounded-lg bg-[#ecf0f3] shadow-input focus-within:shadow-focus'>
+                <textarea
+                  name='message'
+                  placeholder='Your Message'
+                  maxLength={217}
+                  className='bg-[#ecf0f3]  w-full h-44 py-2 border-none outline-none mt-1 bg-opacity-0 pr-6 resize-none overflow-hidden'
+                />
+              </div>
             </form>
           </div>
         </div>
