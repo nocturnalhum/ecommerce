@@ -18,12 +18,14 @@ export default function Contact() {
               action=''
               className='flex flex-col justify-center items-center w-full h-full'
             >
-              <input
-                type='text'
-                name='name'
-                placeholder='Name'
-                className='w-full h-10 pl-6 my-4 rounded-lg bg-[#ecf0f3] shadow-input'
-              />
+              <div className='shadow-input'>
+                <input
+                  type='text'
+                  name='name'
+                  placeholder='Name'
+                  className='w-full h-10 pl-6 my-4 rounded-lg bg-[#ecf0f3]'
+                />
+              </div>
               <input
                 type='email'
                 name='email'
