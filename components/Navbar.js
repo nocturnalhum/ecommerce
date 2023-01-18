@@ -16,13 +16,12 @@ export default function Navbar() {
 
   return (
     <nav className='shadow-md w-full fixed top-0 left-0'>
-      <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
+      <div className='md:flex items-center justify-between bg-white py-4 md:px-4 px-7'>
         <div
-          className={`${logoFont.className} font-semibold  text-2xl cursor-pointer flex items-center justify-between
-      text-gray-800`}
+          className={`${logoFont.className} font-semibold text-red-600  text-2xl cursor-pointer flex items-center justify-between`}
         >
           Sugardipity
-          <span className='text-3xl cursor-pointer md:hidden'>
+          <span className='text-3xl cursor-pointer md:hidden text-black'>
             {menuOpen ? (
               <IoClose onClick={() => setMenuOpen(!menuOpen)} />
             ) : (
@@ -34,7 +33,7 @@ export default function Navbar() {
         <ul
           className={`${
             linksFont.className
-          } md:flex font-bold pl-8 md:pl-0 lg:gap-10 md:items-center md:gap-2 md:pb-0 pb-12 absolute md:static bg-gray-300 md:z-auto z-[-1] left-0 w-full md:w-auto transition-all duration-700 ease-in  ${
+          } md:flex font-bold pl-8 md:pl-0 lg:gap-10 md:items-center md:gap-5 md:pb-0 pb-12 absolute md:static bg-gray-300 md:bg-white md:z-auto z-[-1] left-0 w-full md:w-auto transition-all md:transition-none duration-700 ease-in  ${
             menuOpen ? 'top-16' : 'top-[-400px]'
           }`}
         >
