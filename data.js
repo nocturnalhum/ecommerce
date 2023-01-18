@@ -21,7 +21,7 @@ const Links = [
   },
   {
     name: 'Contact',
-    link: '/',
+    link: 'contact',
     icon: <MdOutlineMail />,
   },
 ];

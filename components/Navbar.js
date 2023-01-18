@@ -20,7 +20,7 @@ export default function Navbar() {
         <div
           className={`${logoFont.className} font-semibold text-red-600  text-2xl cursor-pointer flex items-center justify-between`}
         >
-          Sugardipity
+          <Link href='/'>Sugardipity</Link>
           <span className='text-3xl cursor-pointer md:hidden text-black'>
             {menuOpen ? (
               <IoClose onClick={() => setMenuOpen(!menuOpen)} />
@@ -33,7 +33,7 @@ export default function Navbar() {
         <ul
           className={`${
             linksFont.className
-          } md:flex font-bold pl-8 md:pl-0 lg:gap-10 md:items-center md:gap-5 md:pb-0 pb-12 absolute md:static bg-gray-300 md:bg-white md:z-auto z-[-1] left-0 w-full md:w-auto transition-all md:transition-none duration-700 ease-in  ${
+          } md:flex font-bold pl-8 md:pl-0 lg:gap-10 md:items-center md:gap-5 md:pb-0 pb-12 absolute md:static bg-gray-300 md:bg-white md:z-auto z-[-1] left-0 w-full md:w-auto transition-all md:transition-none duration-500 ease-in  ${
             menuOpen ? 'top-16' : 'top-[-400px]'
           }`}
         >
@@ -42,7 +42,7 @@ export default function Navbar() {
               key={item.name}
               className='font-bold hover:text-cyan-700  my-8 md:my-0'
             >
-              <Link href={item.link} as='image'>
+              <Link href={item.link}>
                 <span className='flex gap-2'>
                   <div className='text-2xl md:max-lg:hidden lg:block'>
                     {item.icon}
