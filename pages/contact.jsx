@@ -33,7 +33,7 @@ export default function Contact() {
               <input
                 type='text'
                 name='subject'
-                placeholder='Subjet'
+                placeholder='Subject'
                 className='w-full h-10 pl-6 my-4 border-none outline-none rounded-lg bg-[#ecf0f3] shadow-input focus:shadow-focus'
               />
               <input
