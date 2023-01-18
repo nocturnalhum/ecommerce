@@ -7,22 +7,22 @@ const Links = [
   {
     name: 'Cookies',
     link: '/',
-    icon: <FaCookie className='text-2xl md:max-lg:hidden lg:block' />,
+    icon: <FaCookie />,
   },
   {
     name: 'Workshops',
     link: '/',
-    icon: <GrWorkshop className='text-2xl md:max-lg:hidden lg:block' />,
+    icon: <GrWorkshop />,
   },
   {
     name: 'Baking Supplies',
     link: '/',
-    icon: <GiCookingGlove className='text-2xl md:max-lg:hidden lg:block' />,
+    icon: <GiCookingGlove />,
   },
   {
     name: 'Contact',
     link: '/',
-    icon: <MdOutlineMail className='text-2xl md:max-lg:hidden lg:block' />,
+    icon: <MdOutlineMail />,
   },
 ];
 

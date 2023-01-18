@@ -44,7 +44,9 @@ export default function Navbar() {
             >
               <Link href={item.link} as='image'>
                 <span className='flex gap-2'>
-                  {item.icon}
+                  <div className='text-2xl md:max-lg:hidden lg:block'>
+                    {item.icon}
+                  </div>
                   {item.name}
                 </span>
               </Link>
