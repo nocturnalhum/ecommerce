@@ -22,7 +22,7 @@ export default function Contact() {
                 type='text'
                 name='name'
                 placeholder='Name'
-                className='w-full h-10 pl-6 my-4 border-none outline-none rounded-lg bg-[#ecf0f3] shadow-input focus:shadow-focus'
+                className='w-full h-10 pl-6 my-4 border-none outline-none rounded-lg bg-[#ecf0f3] shadow-finput focus:shadow-ffocus'
               />
               <input
                 type='email'
