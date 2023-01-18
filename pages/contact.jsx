@@ -11,8 +11,8 @@ export default function Contact() {
   return (
     <>
       <Layout title='Contact'>
-        <div className='flex justify-center bg-[#ecf0f3] h-[800px] relative z-[-2]'>
-          <div className='container rounded-xl p-10 pb-20 bg-[#ecf0f3] shadow-form top-16 absolute z-[-1]'>
+        <div className='flex justify-center bg-[#ecf0f3] h-[950px] relative z-[-2]'>
+          <div className='container rounded-xl p-10 pb-20 bg-[#ecf0f3] shadow-form top-20 absolute z-[-1]'>
             <h1 className='text-3xl font-bold'>Contact</h1>
             <form
               action=''
