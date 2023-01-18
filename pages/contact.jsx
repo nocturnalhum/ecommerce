@@ -18,26 +18,30 @@ export default function Contact() {
               action=''
               className='flex flex-col justify-center items-center w-full h-full'
             >
-              <div className='shadow-input'>
+              <div className='w-full h-10 pl-6 my-4 rounded-lg bg-[#ecf0f3] shadow-input focus:shadow-focus'>
                 <input
                   type='text'
                   name='name'
                   placeholder='Name'
-                  className='w-full h-10 pl-6 my-4 rounded-lg bg-[#ecf0f3]'
+                  className='bg-[#ecf0f3]  border-none outline-none mt-2 bg-opacity-0'
                 />
               </div>
-              <input
-                type='email'
-                name='email'
-                placeholder='Email'
-                className='w-full h-10 pl-6 my-4 rounded-lg bg-[#ecf0f3] shadow-form'
-              />
-              <input
-                type='text'
-                name='subject'
-                placeholder='Subject'
-                className='w-full h-10 pl-6 my-4 border-none outline-none rounded-lg bg-[#ecf0f3] shadow-input focus:shadow-focus'
-              />
+              <div>
+                <input
+                  type='email'
+                  name='email'
+                  placeholder='Email'
+                  className='w-full h-10 pl-6 my-4 rounded-lg bg-[#ecf0f3] shadow-input focus:shadow-focus'
+                />
+              </div>
+              <div className='w-full h-10 pl-6 my-4 rounded-lg bg-[#ecf0f3] shadow-input focus-within:shadow-focus'>
+                <input
+                  type='text'
+                  name='subject'
+                  placeholder='Subject'
+                  className='bg-[#ecf0f3]  border-none outline-none mt-2 bg-opacity-0'
+                />
+              </div>
               <input
                 type='text'
                 name='message'
