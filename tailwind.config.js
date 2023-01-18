@@ -11,7 +11,7 @@ module.exports = {
         finput:
           'inset 10px 10px 10px rgba(209, 217, 230, 1.0), inset -10px -10px 10px rgba(255,255,255, 1.0)',
         ffocus:
-          'inset 4px 4px 4px rgba(209, 217, 230, 1.0) inset, inset -4px -4px 16px rgba(255,255,255, 1.0)',
+          'inset 4px 4px 4px rgba(209, 217, 230, 1.0), inset -4px -4px 16px rgba(255,255,255, 1.0)',
       },
     },
   },
