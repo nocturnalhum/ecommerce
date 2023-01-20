@@ -33,7 +33,7 @@ export default function Navbar() {
         <ul
           className={`${
             linksFont.className
-          } md:flex font-bold pl-8 md:pl-0 lg:gap-10 md:items-center md:gap-5 md:pb-0 pb-12 absolute md:static bg-gray-300 md:bg-white md:z-auto z-[-1] left-0 w-full md:w-auto transition-all md:transition-none duration-500 ease-in  ${
+          } md:flex font-bold pl-8 md:pl-0 lg:gap-10 md:items-center md:gap-5 md:pb-0 pb-12 absolute md:static bg-gray-300 md:bg-white md:z-auto -z-10 left-0 w-full md:w-auto transition-all md:transition-none duration-500 ease-in  ${
             menuOpen ? 'top-16' : 'top-[-400px]'
           }`}
         >

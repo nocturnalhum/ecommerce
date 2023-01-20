@@ -11,14 +11,14 @@ export default function Contact() {
   return (
     <>
       <Layout title='Contact'>
-        <div className='w-full flex justify-center bg-[#ecf0f3] h-full relative top-16 '>
-          <div className='max-w-2xl rounded-xl p-10 pb-20 bg-[#ecf0f3] shadow-form top-20'>
+        <div className='w-full h-full flex justify-center bg-[#ecf0f3] mt-16'>
+          <div className='max-w-2xl rounded-xl p-10 h-4/5 mt-5 bg-[#ecf0f3] shadow-form'>
             <h1 className='text-3xl font-bold flex justify-center mb-4'>
               @Contact
             </h1>
             <form
               action=''
-              className='flex flex-col justify-center items-center w-full h-full'
+              className='flex flex-col justify-center items-center w-full'
             >
               <div className='w-full h-10 pl-6 my-4 rounded-lg bg-[#ecf0f3] shadow-input focus-within:shadow-focus'>
                 <input

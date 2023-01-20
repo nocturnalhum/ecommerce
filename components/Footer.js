@@ -8,8 +8,10 @@ const logoFont = Monoton({ weight: '400', subsets: ['latin'] });
 export default function Footer() {
   return (
     <>
-      <div className='flex flex-col justify-center items-center h-56 bg-gray-700 shadow-inner py-12'>
-        <div className={`${logoFont.className} text-red-700 text-4xl mb-6`}>
+      <div className='flex flex-col justify-center items-center h-64  bg-gray-700 shadow-inner py-12'>
+        <div
+          className={`${logoFont.className} text-red-700 text-4xl mb-6 mt-16`}
+        >
           Sugardipity
         </div>
         <div className='flex mb-4'>
