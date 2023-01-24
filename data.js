@@ -6,22 +6,22 @@ import { MdOutlineMail } from 'react-icons/md';
 const Links = [
   {
     name: 'Cookies',
-    link: '/',
+    link: '/cookies',
     icon: <FaCookie />,
   },
   {
     name: 'Workshops',
-    link: '/',
+    link: '/workshop',
     icon: <GrWorkshop />,
   },
   {
     name: 'Baking Supplies',
-    link: '/',
+    link: '/supplies',
     icon: <GiCookingGlove />,
   },
   {
     name: 'Contact',
-    link: 'contact',
+    link: '/contact',
     icon: <MdOutlineMail />,
   },
 ];

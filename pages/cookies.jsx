@@ -1,14 +1,12 @@
 import React from 'react';
-import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 import Layout from '../components/Layout';
 
-export default function Workshop() {
+export default function Cookies() {
   return (
     <>
-      <Layout title='Workshops'>
+      <Layout title='Cookies'>
         <div className='h-screen flex justify-center items-center text-cyan-800 mt-50 bg-slate-300 font-bold text-3xl'>
-          <h1>None Available At this Time</h1>
-          <AiOutlineLoading3Quarters className='animate-spin' />
+          <h1>Cookies Page</h1>
         </div>
       </Layout>
     </>
