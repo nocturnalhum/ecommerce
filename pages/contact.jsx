@@ -1,8 +1,8 @@
-import { useState } from 'react';
 import Layout from '../components/Layout';
 import { useRouter } from 'next/router';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { sendContactForm } from '../lib/api';
 
 export default function Contact() {
   const router = useRouter();
@@ -13,6 +13,7 @@ export default function Contact() {
       email: '',
       subject: '',
       message: '',
+      isLoading: false,
     },
     // Form Validation:
     validationSchema: Yup.object({
@@ -30,8 +31,11 @@ export default function Contact() {
         .required('Message is required.'),
     }),
     // Handle Form Submit:
-    onSubmit: (values) => {
-      console.log(values);
+    onSubmit: async (values) => {
+      formik.setValues({ ...values, isLoading: true });
+      console.log('TEST', formik.values);
+      await sendContactForm(formik.values);
+      formik.setValues({ ...values, isLoading: false });
       router.push({ pathname: '/messagesent', query: values });
     },
   });
@@ -145,7 +149,7 @@ export default function Contact() {
                     formik.isValid ? 'bg-blue-500' : 'bg-gray-400'
                   } text-blue-50 px-8 py-2 rounded-full font-medium`}
                 >
-                  Submit
+                  {formik.values.isLoading ? 'Sending...' : 'Submit'}
                 </button>
               </div>
             </form>
