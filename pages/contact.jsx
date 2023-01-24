@@ -13,6 +13,7 @@ export default function Contact() {
       email: '',
       subject: '',
       message: '',
+      error: '',
       isLoading: false,
     },
     // Form Validation:
@@ -33,10 +34,14 @@ export default function Contact() {
     // Handle Form Submit:
     onSubmit: async (values) => {
       formik.setValues({ ...values, isLoading: true });
-      console.log('TEST', formik.values);
-      await sendContactForm(formik.values);
-      formik.setValues({ ...values, isLoading: false });
-      router.push({ pathname: '/messagesent', query: values });
+      console.log('TEST', values);
+      try {
+        await sendContactForm(formik.values);
+        formik.setValues({ ...values, ...formik.initialValues });
+        router.push({ pathname: '/messagesent', query: values });
+      } catch (error) {
+        formik.setValues({ ...values, isLoading: false, error: error.message });
+      }
     },
   });
 
@@ -45,9 +50,14 @@ export default function Contact() {
       <Layout title='Contact'>
         <main className='w-full h-screen flex justify-center bg-offwhite1  mt-16'>
           <div className='w-[450px] rounded-xl p-10 h-fit mt-7 bg-offwhite1 shadow-form'>
-            <h1 className='text-3xl font-bold flex justify-center mb-6'>
+            <heading className='text-3xl font-bold flex justify-center mb-6'>
               Contact
-            </h1>
+            </heading>
+            {formik.values.error && (
+              <p className='text-red-500 my-2 text-lg flex justify-center     '>
+                {formik.values.error}
+              </p>
+            )}
             {/* ============================================================ */}
             {/* ==========<<< Form Field >>>================================ */}
             {/* ============================================================ */}

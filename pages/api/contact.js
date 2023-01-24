@@ -3,6 +3,12 @@
 import { transporter } from '../../config/nodemailer';
 import Link from 'next/link';
 
+const htmlMessage = (data) => `
+	<h3>Name: ${data.name}</h3>
+	<h3>Email: <Link href={data.email}>${data.email}</Link></h3>
+	<h3>Subject: ${data.subject}</h3>
+	<h3>Message:</h3><p>${data.message}</p>`;
+
 const handler = async (req, res) => {
   if (req.method === 'POST') {
     const data = req.body;
@@ -15,7 +21,7 @@ const handler = async (req, res) => {
         to: process.env.EMAIL,
         subject: data.subject,
         text: 'This is a test string',
-        html: `<h1>${data.subject}</h1><p>${data.message}</p><Link href={data.email}>${data.email}</Link>`,
+        html: htmlMessage(data),
       });
       return res.status(200).json({ success: true });
     } catch (error) {
