@@ -8,9 +8,9 @@ const logoFont = Monoton({ weight: '400', subsets: ['latin'] });
 export default function Footer() {
   return (
     <>
-      <div className='flex flex-col justify-center items-center h-64  bg-gray-700 shadow-inner py-12'>
+      <div className='flex flex-col justify-center items-center h-64 w-full bg-gray-700 shadow-inner py-6'>
         <div
-          className={`${logoFont.className} text-red-700 text-4xl mb-6 mt-16`}
+          className={`${logoFont.className} text-red-700 text-4xl mb-6 mt-8`}
         >
           Sugardipity
         </div>
@@ -21,7 +21,7 @@ export default function Footer() {
             </Link>
           </div>
           <div className='border-2  p-3  mx-2  rounded-full'>
-            <Link href='https://www.facebook.com/sugardipity'>
+            <Link href='/contact'>
               <HiEnvelope className='text-2xl text-gray-100 ' />
             </Link>
           </div>

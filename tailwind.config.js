@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        offwhite1: '#ecf0f3',
+        offwhite2: '#d1d9e6',
+      },
       boxShadow: {
         form: '10px 10px 10px rgba(209, 217, 230, 1.0), -10px -10px 10px rgba(255,255,255, 1.0)',
         focus:
