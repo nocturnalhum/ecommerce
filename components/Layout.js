@@ -15,15 +15,15 @@ export default function Layout({ children, title }) {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div className='flex h-screen flex-col justify-between'>
+      <div className='flex flex-col justify-between'>
         <header>
           <Navbar />
         </header>
-        <main className={`${inter.className} h-full`}>{children}</main>
+        <main className={`${inter.className}`}>{children}</main>
+        <footer>
+          <Footer />
+        </footer>
       </div>
-      <footer>
-        <Footer />
-      </footer>
     </>
   );
 }

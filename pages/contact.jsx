@@ -45,10 +45,10 @@ export default function Contact() {
         .required('Please enter your name.'),
       email: Yup.string()
         .email('Invalid email address')
-        .required('Email is required.'),
+        .required('Please enter your email.'),
       subject: Yup.string()
         .max(100, 'Maximum 100 characters')
-        .required('Subject is required'),
+        .required('Please enter a subject.'),
       message: Yup.string()
         .max(250, 'Maximum 250 characters')
         .required('Message is required.'),
@@ -70,8 +70,8 @@ export default function Contact() {
   return (
     <>
       <Layout title='Contact'>
-        <main className='w-full h-screen flex justify-center bg-offwhite1  mt-16'>
-          <div className='w-[450px] rounded-xl p-10 h-fit mt-7 bg-offwhite1 shadow-form'>
+        <main className='w-full min-h-[calc(100vh-64px)] flex justify-center bg-neuwhite-100 mt-16'>
+          <div className='container max-w-2xl max-h-[800px]   mx-auto rounded-xl p-10 my-8 bg-newwhite-100 shadow-form'>
             <h1 className='text-3xl font-bold flex justify-center mb-6'>
               Contact
             </h1>
@@ -96,14 +96,14 @@ export default function Contact() {
                   {formik.touched.name && formik.errors.name}
                 </p>
               </label>
-              <div className='w-full h-10 pl-6 my-2 rounded-lg bg-offwhite1 shadow-input focus-within:shadow-focus'>
+              <div className='w-full h-10 pl-6 my-2 rounded-lg bg-neuwhite-100 shadow-input focus-within:shadow-focus'>
                 <input
                   type='text'
                   name='name'
                   required
                   value={formik.values.name}
                   onChange={formik.handleChange}
-                  placeholder='Please provide your contact name'
+                  placeholder='Name'
                   onBlur={formik.handleBlur}
                   className='bg-[#ecf0f3]  pr-6 w-full border-none outline-none mt-2 bg-opacity-0'
                 />
@@ -117,7 +117,7 @@ export default function Contact() {
                   {formik.touched.email && formik.errors.email}
                 </p>
               </label>
-              <div className='w-full h-10 pl-6 my-2 rounded-lg bg-offwhite1 shadow-input focus-within:shadow-focus'>
+              <div className='w-full h-10 pl-6 my-2 rounded-lg bg-neuwhite-100 shadow-input focus-within:shadow-focus'>
                 <input
                   type='email'
                   name='email'
@@ -139,7 +139,7 @@ export default function Contact() {
                   {formik.touched.subject && formik.errors.subject}
                 </p>
               </label>
-              <div className='w-full h-10 pl-6 my-2 rounded-lg bg-offwhite1 shadow-input focus-within:shadow-focus'>
+              <div className='w-full h-10 pl-6 my-2 rounded-lg bg-neuwhite-100 shadow-input focus-within:shadow-focus'>
                 <input
                   type='text'
                   name='subject'
@@ -160,7 +160,7 @@ export default function Contact() {
                   {formik.touched.message && formik.errors.message}
                 </p>
               </label>
-              <div className='w-full h-48  pl-6 my-4 rounded-lg bg-offwhite1 shadow-input focus-within:shadow-focus'>
+              <div className='w-full h-48  pl-6 my-4 rounded-lg bg-neuwhite-100 shadow-input focus-within:shadow-focus'>
                 <textarea
                   name='message'
                   placeholder='Your Message'
@@ -183,7 +183,7 @@ export default function Contact() {
                       : 'bg-gray-400 cursor-not-allowed'
                   } text-blue-50 px-8 py-2 rounded-full font-medium w-40  `}
                 >
-                  {!formik.values.isLoading ? (
+                  {formik.values.isLoading ? (
                     <div className='flex items-center gap-2 justify-center mr-2'>
                       <GiTwirlyFlower className='animate-spin text-2xl' />
                       Sending
