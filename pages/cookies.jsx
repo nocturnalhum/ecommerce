@@ -323,8 +323,10 @@ export default function Cookies() {
           <button
             onClick={scrollToTop}
             className={`hover:bg-cyan-800 ${
-              !scrollTop ? 'opacity-0 -right-20 ' : 'opacity-80'
-            } duration-700 ease-in-out  bg-gray-900 fixed bottom-32 right-3 border-0 w-10 h-10 rounded-full drop-shadow-md text-white text-3xl font-bold`}
+              !scrollTop
+                ? 'opacity-0 right-[-50px]'
+                : 'opacity-80 right-4 sm:right-6'
+            } duration-700 ease-in-out  bg-gray-900 fixed bottom-32  border-0 w-10 h-10 rounded-full drop-shadow-md text-white text-3xl font-bold`}
           >
             &uarr;
           </button>
