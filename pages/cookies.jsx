@@ -5,16 +5,16 @@ export default function Cookies() {
   return (
     <>
       <Layout title='Cookies'>
-        <main className='min-h-screen mt-6 '>
-          <div className='p-20 flex items-center justify-center  text-cyan-800 mt-50 bg-slate-300 font-bold text-3xl'>
+        <main className='min-h-screen items-center mt-6 '>
+          <div className='w-full p-20 flex items-center justify-center  text-cyan-800 mt-50 bg-slate-300 font-bold text-3xl'>
             <h3>Seasonal Cookies</h3>
           </div>
-          <div className='w-full h-96 bg-macaroons bg-fixed bg-cover bg-bottom flex justify-center items-center'>
+          <div className='w-full h-96 bg-macaroons bg-no-repeat bg-fixed bg-cover bg-bottom flex justify-center items-center'>
             <h1 className='text-white opacity-90 drop-shadow-lg text-6xl italic font-bold'>
               Spring
             </h1>
           </div>
-          <div class='p-20 space-y-8'>
+          <div className='p-20 space-y-8'>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               imperdiet viverra ante et tincidunt. Nullam mollis, elit
@@ -306,7 +306,7 @@ export default function Cookies() {
           </div>
           <button
             id='to-top-button'
-            class=' fixed  bottom-72 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-indigo-500 text-white text-3xl font-bold'
+            className=' fixed  bottom-72 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-indigo-500 text-white text-3xl font-bold'
           >
             &uarr;
           </button>

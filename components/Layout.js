@@ -20,7 +20,7 @@ export default function Layout({ children, title }) {
           <Navbar />
         </header>
         <main
-          className={`${inter.className} w-full min-h-[calc(100vh-64px)] h-screen`}
+          className={`${inter.className}  min-h-[calc(100vh-64px)] h-screen `}
         >
           {children}
           <footer>
