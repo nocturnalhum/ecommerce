@@ -70,8 +70,8 @@ export default function Contact() {
   return (
     <>
       <Layout title='Contact'>
-        <main className='w-full min-h-[calc(100vh-64px)] flex justify-center bg-neuwhite-100 mt-16'>
-          <div className='container max-w-2xl max-h-[800px]   mx-auto rounded-xl p-10 my-8 bg-newwhite-100 shadow-form'>
+        <main className=' flex justify-center bg-neuwhite-100 min-h-screen mt-16'>
+          <div className='container h-full max-w-2xl max-h-[800px]  mx-auto rounded-xl p-10 my-8 bg-newwhite-100 shadow-form'>
             <h1 className='text-3xl font-bold flex justify-center mb-6'>
               Contact
             </h1>

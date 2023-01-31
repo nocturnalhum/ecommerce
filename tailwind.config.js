@@ -6,6 +6,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        macaroons:
+          'url(https://images.pexels.com/photos/4346320/pexels-photo-4346320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)',
+        summer:
+          'url(https://images.pexels.com/photos/314780/pexels-photo-314780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)',
+        autumn:
+          'url(https://images.pexels.com/photos/5429056/pexels-photo-5429056.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)',
+        winter:
+          'url(https://images.pexels.com/photos/6276196/pexels-photo-6276196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)',
+      },
       colors: {
         neuwhite: {
           100: '#ecf0f3',

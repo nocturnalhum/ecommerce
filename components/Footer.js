@@ -8,7 +8,7 @@ const logoFont = Monoton({ weight: '400', subsets: ['latin'] });
 export default function Footer() {
   return (
     <>
-      <div className='flex flex-col justify-center items-center h-64 w-full bg-gray-700 shadow-inner'>
+      <div className='fixed left-0 bottom-0 flex flex-col justify-center items-center h-64 w-full bg-gray-700 shadow-inner'>
         <div
           className={`${logoFont.className} text-red-700 text-4xl mb-6 mt-8`}
         >

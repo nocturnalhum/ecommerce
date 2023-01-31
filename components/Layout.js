@@ -19,10 +19,14 @@ export default function Layout({ children, title }) {
         <header>
           <Navbar />
         </header>
-        <main className={`${inter.className}`}>{children}</main>
-        <footer>
-          <Footer />
-        </footer>
+        <main
+          className={`${inter.className} w-full min-h-[calc(100vh-64px)] h-screen`}
+        >
+          {children}
+          <footer>
+            <Footer />
+          </footer>
+        </main>
       </div>
     </>
   );
