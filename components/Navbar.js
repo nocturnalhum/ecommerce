@@ -15,7 +15,7 @@ export default function Navbar() {
   const handleMenu = (prev) => setMenuOpen(!prev);
 
   return (
-    <nav className='shadow-md w-full fixed top-0 left-0 z-50 '>
+    <nav className='shadow-md w-full fixed top-0 left-0 z-20  '>
       <div className='md:flex items-center justify-between bg-slate-400  py-4 md:px-4 px-7'>
         <div
           className={`${logoFont.className} font-semibold text-red-600  text-2xl cursor-pointer flex items-center justify-between`}

@@ -8,25 +8,23 @@ const logoFont = Monoton({ weight: '400', subsets: ['latin'] });
 export default function Footer() {
   return (
     <>
-      <div className='fixed left-0 bottom-0 flex flex-col justify-center items-center h-64 w-full bg-gray-700 shadow-inner'>
-        <div
-          className={`${logoFont.className} text-red-700 text-4xl mb-6 mt-8`}
-        >
+      <div className='fixed left-0 bottom-0 flex flex-col justify-center items-center h-28 w-full bg-gray-700 shadow-inner'>
+        <div className={`${logoFont.className} text-red-700 text-2xl mb-1 `}>
           Sugardipity
         </div>
-        <div className='flex mb-4'>
-          <div className='border-2 p-3 mx-2 rounded-full    '>
+        <div className='flex mb-2'>
+          <div className='border-2 p-1 mx-2 rounded-full    '>
             <Link href='https://www.facebook.com/sugardipity'>
-              <FaFacebook className='text-2xl text-white ' />
+              <FaFacebook className='text-xl text-white ' />
             </Link>
           </div>
-          <div className='border-2  p-3  mx-2  rounded-full'>
+          <div className='border-2 p-1 mx-2 rounded-full'>
             <Link href='/contact'>
-              <HiEnvelope className='text-2xl text-gray-100 ' />
+              <HiEnvelope className='text-xl text-gray-100 ' />
             </Link>
           </div>
         </div>
-        <div className='text-gray-100'>
+        <div className='text-gray-100 text-xs'>
           Copyright © 2023 Sugardipity. All rights reserved.
         </div>
       </div>

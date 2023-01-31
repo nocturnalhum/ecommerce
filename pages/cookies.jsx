@@ -1,12 +1,31 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 
 export default function Cookies() {
+  const [scrollTop, setScrollTop] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        setScrollTop(true);
+      } else {
+        setScrollTop(false);
+      }
+    });
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <>
       <Layout title='Cookies'>
         <main className='min-h-screen items-center mt-6 '>
-          <div className='w-full p-20 flex items-center justify-center  text-cyan-800 mt-50 bg-slate-300 font-bold text-3xl'>
+          <div className='w-full p-20 flex items-center justify-center text-cyan-800 mt-50 bg-slate-300 font-bold text-3xl'>
             <h3>Seasonal Cookies</h3>
           </div>
           <div className='w-full h-96 bg-macaroons bg-no-repeat bg-fixed bg-cover bg-bottom flex justify-center items-center'>
@@ -84,7 +103,6 @@ export default function Cookies() {
               Summer
             </h1>
           </div>
-
           <div className='p-20 space-y-8'>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -159,7 +177,6 @@ export default function Cookies() {
               Autumn
             </h1>
           </div>
-
           <div className='p-20 space-y-8'>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
@@ -234,8 +251,7 @@ export default function Cookies() {
               Winter
             </h1>
           </div>
-
-          <div className='p-20 space-y-8 mb-64'>
+          <div className='p-20 space-y-8 mb-20'>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               imperdiet viverra ante et tincidunt. Nullam mollis, elit
@@ -301,12 +317,14 @@ export default function Cookies() {
               enim, eget egestas sapien urna in turpis. Quisque scelerisque
               dolor sagittis lorem accumsan, at tempus odio convallis. Nulla
               venenatis pulvinar ipsum vel auctor. Praesent a enim at erat
-              fringilla lacinia. Aenean eu ultrices ante.
+              ringilla lacinia. Aenean eu ultrices ante.
             </p>
           </div>
           <button
-            id='to-top-button'
-            className=' fixed  bottom-72 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-indigo-500 text-white text-3xl font-bold'
+            onClick={scrollToTop}
+            className={`hover:bg-cyan-800 ${
+              !scrollTop ? 'opacity-0 -right-20 ' : 'opacity-80'
+            } duration-700 ease-in-out  bg-gray-900 fixed bottom-32 right-3 border-0 w-10 h-10 rounded-full drop-shadow-md text-white text-3xl font-bold`}
           >
             &uarr;
           </button>
