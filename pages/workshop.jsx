@@ -7,8 +7,7 @@ export default function Workshop() {
     <>
       <Layout title='Workshops'>
         <div className='h-screen flex justify-center items-center text-cyan-800 mt-50 bg-slate-300 font-bold text-3xl'>
-          <h1>None Available At this Time</h1>
-          <AiOutlineLoading3Quarters className='animate-spin' />
+          <h1>No Workshops Available At this Time</h1>
         </div>
       </Layout>
     </>
